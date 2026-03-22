@@ -8,7 +8,7 @@
     "extensions": ["./src/index.ts"]
   },
   "dependencies": {
-    "@wechatbot/wechatbot": "^2.0.0",
+    "@wechatbot/wechatbot": "file:../nodejs",
     "qrcode-terminal": "^0.12.0"
   },
   "peerDependencies": {
