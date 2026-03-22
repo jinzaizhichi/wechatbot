@@ -4,6 +4,20 @@ WeChat iLink Bot SDK — modular, production-grade, multi-language.
 
 Let any agent connect to WeChat in 5 minutes. Inspired by [tencent-weixin/openclaw-weixin-cli](https://github.com/nicepkg/openclaw-weixin).
 
+## Pi Agent Extension
+
+**Chat with Pi from WeChat** — scan a QR code, your WeChat messages become Pi prompts.
+
+```bash
+# Load the extension
+pi -e /path/to/wechatbot/agent/src/index.ts
+
+# Then in pi:
+/wechat          # Shows QR code → scan in WeChat → connected!
+```
+
+See [agent/README.md](agent/README.md) for full docs.
+
 ## SDKs
 
 | SDK | Install | Status |
@@ -93,6 +107,7 @@ All SDKs share the same capabilities:
 | Document | Description |
 |---|---|
 | [docs/protocol.md](docs/protocol.md) | iLink Bot API protocol reference |
+| [agent/README.md](agent/README.md) | Pi extension (WeChat ↔ Pi bridge) |
 | [docs/architecture.md](docs/architecture.md) | Architecture & SDK comparison |
 | [nodejs/README.md](nodejs/README.md) | Node.js SDK docs |
 | [golang/README.md](golang/README.md) | Go SDK docs |
@@ -110,6 +125,9 @@ cd website && npm run dev  # http://localhost:8045
 
 ```
 wechatbot/
+├── agent/              # Pi extension (WeChat ↔ Pi bridge)
+│   ├── src/index.ts    # Extension entry (commands, events)
+│   └── src/wechat.ts   # WeChat iLink client
 ├── nodejs/             # Node.js SDK (TypeScript)
 │   ├── src/            # 42 source files, 10 modules
 │   ├── tests/          # 41 unit tests
