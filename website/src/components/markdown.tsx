@@ -57,6 +57,7 @@ function useActiveTocId() {
 const PAGE_NAV_EN: Array<{ slug?: string; label: string; icon: string }> = [
   { slug: undefined, label: 'Overview', icon: '📦' },
   { slug: 'nodejs', label: 'Node.js', icon: '🟢' },
+  { slug: 'python', label: 'Python', icon: '🐍' },
   { slug: 'golang', label: 'Go', icon: '🔵' },
   { slug: 'rust', label: 'Rust', icon: '🦀' },
   { slug: 'pi-agent', label: 'Pi Agent', icon: '🤖' },
@@ -65,6 +66,7 @@ const PAGE_NAV_EN: Array<{ slug?: string; label: string; icon: string }> = [
 const PAGE_NAV_ZH: Array<{ slug?: string; label: string; icon: string }> = [
   { slug: undefined, label: '概览', icon: '📦' },
   { slug: 'nodejs', label: 'Node.js', icon: '🟢' },
+  { slug: 'python', label: 'Python', icon: '🐍' },
   { slug: 'golang', label: 'Go', icon: '🔵' },
   { slug: 'rust', label: 'Rust', icon: '🦀' },
   { slug: 'pi-agent', label: 'Pi Agent', icon: '🤖' },

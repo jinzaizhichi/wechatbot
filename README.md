@@ -23,6 +23,7 @@ See [pi-agent/README.md](pi-agent/README.md) for full docs.
 | SDK | Install | Status |
 |---|---|---|
 | [Node.js](nodejs/) | `npm install @wechatbot/wechatbot` | ✓ 42 files, 41 tests |
+| [Python](python/) | `pip install wechatbot-sdk` | ✓ 7 files, 17 tests |
 | [Go](golang/) | `go get github.com/anthropic/wechatbot-go` | ✓ |
 | [Rust](rust/) | `wechatbot = "0.1"` | ✓ |
 
@@ -110,6 +111,7 @@ All SDKs share the same capabilities:
 | [pi-agent/README.md](pi-agent/README.md) | Pi extension (WeChat ↔ Pi bridge) |
 | [docs/architecture.md](docs/architecture.md) | Architecture & SDK comparison |
 | [nodejs/README.md](nodejs/README.md) | Node.js SDK docs |
+| [python/README.md](python/README.md) | Python SDK docs |
 | [golang/README.md](golang/README.md) | Go SDK docs |
 | [rust/README.md](rust/README.md) | Rust SDK docs |
 
@@ -128,10 +130,12 @@ wechatbot/
 ├── pi-agent/              # Pi extension (WeChat ↔ Pi bridge)
 │   ├── src/index.ts    # Extension entry (commands, events)
 │   └── src/wechat.ts   # WeChat iLink client
-├── nodejs/             # Node.js SDK (TypeScript)
-│   ├── src/            # 42 source files, 10 modules
+├── nodejs/             # Node.js SDK (TypeScript, 42 files, 41 tests)
+│   ├── src/            # 10 modules
 │   ├── tests/          # 41 unit tests
 │   └── examples/       # 3 example bots
+├── python/             # Python SDK (async/aiohttp, 17 tests)
+│   └── wechatbot/      # client, protocol, auth, crypto, types, errors
 ├── golang/             # Go SDK
 │   ├── bot.go          # Bot client
 │   ├── types.go        # All types

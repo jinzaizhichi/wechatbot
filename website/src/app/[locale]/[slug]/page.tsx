@@ -8,7 +8,7 @@ import { routing } from 'wechatbot-website/src/i18n/routing'
 import { EditorialPage } from 'wechatbot-website/src/components/markdown'
 import { mdxComponents } from 'wechatbot-website/src/components/mdx-components'
 
-const VALID_SLUGS = ['nodejs', 'golang', 'rust', 'pi-agent']
+const VALID_SLUGS = ['nodejs', 'python', 'golang', 'rust', 'pi-agent']
 
 interface ContentFrontmatter {
   title: string

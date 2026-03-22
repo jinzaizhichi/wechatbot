@@ -7,3 +7,7 @@ tmp/
 next-env.d.ts
 target/
 package-lock.json
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
