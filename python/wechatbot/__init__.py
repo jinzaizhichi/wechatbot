@@ -9,8 +9,11 @@ from .types import (
     VideoContent,
     QuotedMessage,
     ContentType,
+    DownloadedMedia,
+    UploadResult,
+    MediaType,
 )
-from .client import WeChatBot
+from .client import SendContent, WeChatBot
 from .errors import (
     WeChatBotError,
     ApiError,
@@ -28,6 +31,7 @@ from .crypto import (
 
 __all__ = [
     "WeChatBot",
+    "SendContent",
     "Credentials",
     "IncomingMessage",
     "ImageContent",
@@ -36,6 +40,9 @@ __all__ = [
     "VideoContent",
     "QuotedMessage",
     "ContentType",
+    "DownloadedMedia",
+    "UploadResult",
+    "MediaType",
     "WeChatBotError",
     "ApiError",
     "AuthError",
